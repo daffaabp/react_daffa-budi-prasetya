@@ -1,3 +1,6 @@
+Berikut adalah link Google Docs untuk Tugas 1_Introduction-FE
+https://docs.google.com/document/d/135zk6--W-DEyxsCMGimOqXYx4PHZA8zo4bUvZSG_Pdo/edit?usp=sharing
+
 Tuliskan 3 poin yang dipelajari dari materi Introduction FE :
 
 1. Sebagai seorang FE developer tentunya harus bertanggung jawab untuk mengembangkan bagian tampilan dari suatu aplikasi berdasarkan desain yang diberikan oleh tim UI/UX. Kita harus memahami penggunaan bahasa pemrograman seperti HTML, CSS, dan JavaScript untuk menciptakan antarmuka pengguna yang responsif dan menarik.
