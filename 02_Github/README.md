@@ -11,10 +11,10 @@ Git secara mudah dapat dipahami sebagi salah satu sistem pengontrol versi pada p
 - Lebih aman digunakan karena kita bisa tahu apa yang diubah dan siapa yang mengubahnya
 
 ## Kondisi File dalam Git
-##### 1. Modified
+#### 1. Modified
 _Modified_ adalah kondisi dimana revisi atau perubahan sudah dilakukan, tetapi belum ditandai dan belum disimpan di version control. 
 
-##### 2. Staged
+#### 2. Staged
 _Staged_ adalah kondisi dimana revisi sudah ditandai, tetapi belum disimpan di version control. Untuk mengubah kondisi file dari modified ke staged gunakan perintah `git add nama_file`.
 Contoh :
 ```
@@ -23,7 +23,7 @@ git add about.html
 git add contact.html
 ```
 
-##### 3. Commit
+#### 3. Commit
 _Commited_ adalah kondisi dimana revisi sudah disimpan di version control. perintah untuk mengubah kondisi file dari staged ke commited adalah `git commit -m "nama pesan"`.
 Contoh :
 ```
