@@ -7,4 +7,4 @@
 - Jika diibaratkan seperti manusia : HTML adalah rangkanya, CSS adalah bajunya, dan Javascript adalah nyawanya
 2. FE developer perlu memahami dasar-dasar teknologi internet, termasuk konsep jaringan komputer, hosting, keamanan web, dan sistem kontrol versi seperti Git dan GitHub.
 - Internet merupakan singkatan atau kependekan dari international network, yang didefinisikan sebagai suatu jaringan komputer yang sangat besar, dimana jaringan komputer tersebut terdiri dari beberapa jaringan-jaringan kecil yang saling terhubung satu sama lain.
-3. Beberapa tips yang bisa dipakai untuk seorang FE developer yaitu memulai dengan projek rill, jangan takut error, gunakan teknologi yang populer, ikuti kursus atau tutorial, mulai karir dunia IT dengan magang, dan jangan dihafal tapi dipahami, have fun and enjoy your trip.
+3. Beberapa tips yang bisa dipakai untuk seorang FE developer yaitu memulai dengan projek rill, jangan takut error, gunakan teknologi yang populer, ikuti kursus atau tutorial, mulai karir dunia IT dengan magang, dan jangan dihafal tetapi dipahami, have fun and enjoy your trip.
