@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Create Product</title>
+</head>
+
+<body>
+   <h1>Create Product</h1>
+   <h2>Detail Product</h2>
+
+   <form action="#">
+      <label for="product_name">Product name :</label> <br>
+      <input type="text" minlength="6" maxlength="50"> <br>
+
+      <br>
+
+      <label for="product_category">Product Category :</label> <br>
+      <select name="product_category">
+         <option value="None"></option>
+         <option value="Category 1">Category 1</option>
+         <option value="Category 2">Category 2</option>
+         <option value="Category 3">Category 3</option>
+      </select>
+      <br> <br>
+
+      <label for="freshness">Product Freshness :</label> <br>
+      <label for="brand_new"><input type="radio" id="brand_new" name="brand_new">Brand New</label> <br>
+      <label for="second_hank"><input type="radio" id="second_hank" name="second_hank">Second Hank</label> <br>
+      <label for="refurbished"><input type="radio" id="refurbished" name="refurbished">Refurbished</label> <br>
+      <br>
+
+      <label for="image">Image of Product</label>
+      <input type="file" required> <br> <br>
+
+      <label for="addtional_description">Additional Description</label> <br>
+      <textarea name="description" id="description" cols="45" rows="10"></textarea> <br> <br>
+
+      <label for="price">Product Price :</label> <br>
+      <input type="number" size="5" placeholder="$100" required> <br> <br>
+
+      <input type="button" value="submit">
+   </form>
+
+</body>
+
+</html>
