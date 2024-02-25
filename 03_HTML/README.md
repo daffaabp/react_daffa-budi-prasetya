@@ -10,7 +10,7 @@ HTML (Hypertext Markup Language) adalah sebuag standar yang digunakan secara lua
 - Mempublikasikan halaman website secara online
 
 ## Struktur Tag Utama HTML
-- [<! DOCTYPE html>] - mendefinisikan dokumen ini sebagai HTML5
+- [<! DOCTYPE html>] - mendefinisikan dokumen ini sebagai HTML 5
 - [<html>] - elemen root dari halaman HTML
 - [<head>] - berisi informasi meta tentang dokumen
 - [title] - menentukan judul untuk dokumen
