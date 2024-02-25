@@ -34,10 +34,13 @@ Contoh:
 ```
 
 ## Tips dan Trik
-> 1.Pastikan selalu menutup tag yang terbuka dengan tag penutup yang sesuai.
-> 2.Gunakan atribut alt untuk gambar, yang berisi deskripsi singkat gambar untuk aksesibilitas.
-> 3.Semakin dekat tag heading dengan tingkat nomor yang lebih kecil (misalnya,  `<h2>` lebih kecil dari `<h1>`), semakin rendah prioritasnya dalam hierarki judul.
-> 4.HTML hanya bertanggung jawab untuk struktur dan konten halaman. Untuk tata letak dan gaya, nanti akan diatur menggunakan CSS.
+> Pastikan selalu menutup tag yang terbuka dengan tag penutup yang sesuai.
+
+> Gunakan atribut alt untuk gambar, yang berisi deskripsi singkat gambar untuk aksesibilitas.
+
+> Semakin dekat tag heading dengan tingkat nomor yang lebih kecil (misalnya,  `<h2>` lebih kecil dari `<h1>`), semakin rendah prioritasnya dalam hierarki judul.
+
+> HTML hanya bertanggung jawab untuk struktur dan konten halaman. Untuk tata letak dan gaya, nanti akan diatur menggunakan CSS.
 
 
 
