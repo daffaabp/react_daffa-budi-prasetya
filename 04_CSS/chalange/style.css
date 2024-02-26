@@ -1,0 +1,60 @@
+
+body{
+   margin: 0;
+}
+
+h1 {
+   display: inline;
+}
+
+.red {
+   background-color: red;
+}
+
+.red:hover{
+   background-color: green;
+}
+
+.jointbutton:hover{
+   background-color: aqua;
+}
+
+.table-setting {
+   border: 1px solid;
+   border-width: 1px;
+}
+
+.flex {
+   display: flex;
+   justify-content: center;
+}
+
+.text-center {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.margin-5px {
+   margin: 5px;
+}
+
+.reponsive {
+   max-width: 100%;
+   height: auto;
+}
+
+.bg-blue {
+   background-color: rgba(55, 81, 126, 1);
+}
+
+h1,
+a,
+p {
+   color: white;
+}
+
+.button {
+   justify-content: space-evenly;
+   padding: 10px;
+}
