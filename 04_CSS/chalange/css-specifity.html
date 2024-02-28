@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Specifity</title>
+   <style>
+      div {
+         color: red;
+      }
+
+      .helloClass {
+         color: blue !important;
+      }
+
+      #helloID {
+         color: green;
+      }
+
+      /* 
+      100000: !important
+      10000: inline
+      1000: ID
+      100: Class
+      10: tag
+      */
+   </style>
+</head>
+
+<body>
+   <div id="helloID" class="helloClass" style="color: brown;">Hello World</div>
+</body>
+
+</html>

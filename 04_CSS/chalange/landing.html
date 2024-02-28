@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Landing</title>
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+      }
+
+      header {
+         background-color: white;
+         padding: 10px 20px;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .header-left p {
+         color: rgb(28, 28, 28);
+      }
+
+      .header-right {
+         align-items: center;
+         display: flex;
+      }
+
+      .header-right a {
+         float: left;
+         color: #0D6EFD;
+         text-decoration: none;
+         margin: 0px 10px;
+      }
+
+      .header-right .icon {
+         display: none;
+      }
+
+      .active {
+         background-color: #0D6EFD;
+         color: white !important;
+         padding: 10px;
+         border-radius: 5px;
+      }
+
+      @media (max-width: 576px) {
+         .header-right.responsive {
+            display: flex;
+            flex-direction: column;
+            top: 50px;
+         }
+
+         .header-right.responsive .icon {
+            float: right;
+            display: block;
+         }
+
+         .header-right.responsive a {
+            float: none;
+            display: none;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <div class="header-left">
+         <p>Simple Header</p>
+      </div>
+
+      <div class="header-right responsive" id="navbar">
+         <a href="" class="active">Home</a>
+         <a href="">Feature</a>
+         <a href="">Pricing</a>
+         <a href="">FAQs</a>
+         <a href="">About</a>
+         <a href="#" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars">---</i>
+         </a>
+      </div>
+   </header>
+</body>
+
+<script>
+   function toggleMenu() {
+      var x = document.getElementById('navbar');
+      if (x.className == "header-right") {
+         x.className += " responsive";
+      } else {
+         c.className += "header-right";
+      }
+   }
+</script>
+
+</html>
