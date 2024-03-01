@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Landing</title>
+   <title>Landing Page - Perusahaan XYZ</title>
    <style>
       * {
          padding: 0;
@@ -14,12 +14,14 @@
       header {
          background-color: white;
          padding: 10px 20px;
+         /* horizontal: 10px dan vertical: 20px */
          display: flex;
          justify-content: space-between;
       }
 
-      .header-left p {
-         color: rgb(28, 28, 28);
+      .header-left {
+         align-items: center;
+         display: flex;
       }
 
       .header-right {
@@ -27,19 +29,25 @@
          display: flex;
       }
 
+
+      .header-left p {
+         color: rgb(28, 28, 28);
+      }
+
       .header-right a {
          float: left;
-         color: #0D6EFD;
+         color: rgb(0, 106, 255);
          text-decoration: none;
          margin: 0px 10px;
       }
+
 
       .header-right .icon {
          display: none;
       }
 
       .active {
-         background-color: #0D6EFD;
+         background-color: rgb(0, 106, 255);
          color: white !important;
          padding: 10px;
          border-radius: 5px;
@@ -47,6 +55,7 @@
 
       @media (max-width: 576px) {
          .header-right.responsive {
+            position: absolute;
             display: flex;
             flex-direction: column;
             top: 50px;
@@ -70,10 +79,9 @@
       <div class="header-left">
          <p>Simple Header</p>
       </div>
-
       <div class="header-right responsive" id="navbar">
          <a href="" class="active">Home</a>
-         <a href="">Feature</a>
+         <a href="">Features</a>
          <a href="">Pricing</a>
          <a href="">FAQs</a>
          <a href="">About</a>
@@ -83,15 +91,10 @@
       </div>
    </header>
 </body>
-
 <script>
    function toggleMenu() {
-      var x = document.getElementById('navbar');
-      if (x.className == "header-right") {
-         x.className += " responsive";
-      } else {
-         c.className += "header-right";
-      }
+      var x = document.getElementById('navbar')
+      x.classList.toggle('responsive')
    }
 </script>
 
