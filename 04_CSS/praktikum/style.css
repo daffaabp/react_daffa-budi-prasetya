@@ -1,2 +1,443 @@
 
 
+/* Import Font sesuai Figma */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+
+/* Atur Variabel Global Start */
+:root {
+   --main-color: #37517E;
+   --secondary-color: #47B2FF;
+   --third-color: #F3F5FA;
+   --black-color: black;
+
+   --main-font: 'Open Sans';
+   --jost-font: 'Jost';
+   --navbar-font: 'Roboto';
+}
+
+body {
+   font-family: var(--main-font);
+   backgrond-color: #ffff;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: 0;
+   list-style: none;
+   text-decoration: none;
+}
+
+.container {
+   max-width: 1440px;
+   max-height: 760px;
+}
+/* Atur Variabel Global End */
+
+
+
+
+/* Navbar Start */
+.navbar .nav-wrapper {
+   position: relative;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 60px;
+}
+
+.nav-wrapper .menu-toggle {
+   display: none;
+}
+
+
+.nav-wrapper .judul {
+   font-size: 1.5rem;
+   font-family: var(--navbar-font);
+   font-weight: 500;
+   color: var(--black-color);
+}
+
+.nav-wrapper .menu-wrapper .menu {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.menu-wrapper .menu .menu-link {
+   font-size: 1rem;
+   font-family: var(--navbar-font);
+   font-weight: 500;
+   padding: 12px 16px;
+   border-radius: 4px;
+}
+
+.menu-wrapper .menu .menu-link.active {
+   color: #ffff;
+   background-color: blue;
+   border-radius: 4px;
+}
+
+.menu-wrapper .menu .menu-link:hover {
+   color: #ffff;
+   background-color: blue;
+   border-radius: 4px;
+}
+/* Navbar End */
+
+
+
+
+/* Home Start */
+.home {
+   background-color: var(--main-color);
+   height: 760px;
+}
+
+.home .home-wrapper {
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.home-wrapper .pembungkus {
+   display: flex;
+   flex-direction: center;
+   margin-top: 150px;
+}
+
+.home-wrapper .heading {
+   font-size: 3rem;
+   font-family: var(--jost-font);
+   font-weight: 700;
+   max-width: 600px;
+   color: #ffff;
+}
+
+.home-wrapper .subheading {
+   font-size: 1.5rem;
+   font-family: var(--jost-font);
+   font-weight: 500;
+   max-width: 650px;
+   color: #C3C0C0;
+}
+
+.home-wrapper .kolom-flex {
+   margin-top: 3rem;
+   display: flex;
+   gap: 2.5rem;
+}
+
+.kolom-flex .btn-get-started {
+   font-size: 1rem;
+   font-family: var(--jost-font);
+   font-weight: 500;
+   padding: 12px 24px;
+   background-color: var(--secondary-color);
+   color: #ffff;
+   border-radius: 50px;
+}
+
+.kolom-flex .btn-watch-video {
+   font-size: 1rem;
+   font-family: var(--main-font);
+   font-weight: 500;
+   padding: 12px 24px;
+   color: #ffff;
+   border-radius: 50px;
+}
+
+.kolom-flex .btn-watch-video:hover {
+   font-size: 1rem;
+   font-family: var(--main-font);
+   font-weight: 500;
+   padding: 12px 24px;
+   background-color: var(--secondary-color);
+   color: #ffff;
+   border-radius: 50px;
+}
+
+.content-right .img-wrapper {
+   max-width: 720px;
+}
+
+.content-right .img-wrapper img {
+   width: 100%;
+   align-items: center;
+   margin-left: 20px;
+}
+
+.home-wrapper .content-left {
+   flex: 0 0 50%;
+   margin-top: 80px;
+}
+
+.home-wrapper .content-right {
+   flex: 0 0 50%;
+}
+/* Home End */
+
+
+
+
+/* Newsletter Start */
+.newsletter {
+   background-color: var(--third-color);
+   height: 240px;
+}
+.newsletter-wrapper {
+   margin: auto;
+   text-align: center;
+}
+
+.our-newsletter {
+   padding: 60px 0px;
+}
+
+.our-newsletter h2 {
+   font-family: var(--jost-font);
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--main-color);
+}
+
+.our-newsletter .subheading {
+   margin-top: 16px;
+   margin-bottom: 30px;
+   font-family: var(--main-font);
+   font-size: 15px;
+   font-weight: 400;
+   color: #444444;
+}
+
+.btn-subscribe {
+   margin: auto;
+   display: flex;
+   max-width: 700px;
+   width: 100%;
+}
+
+.btn-subscribe input[type="text"] {
+   border: 1px solid #ccc;
+   padding: 10px;
+   flex: 1;
+   border-radius: 20px 0 0 20px;
+}
+
+.btn-subscribe button[type="submit"] {
+   padding: 10px;
+   border: none;
+   background-color: #47B2E4;
+   color: #fff;
+   border-radius: 0 20px 20px 0;
+   input: none;
+   transition: background-color 0.3s;
+}
+
+.btn-subscribe button[type="submit"]:hover {
+   background-color: #3a93d5;
+}
+/* Newsletter End */
+
+
+
+
+/* Kontak Start */
+.kontak-wrapper {
+   display: flex;
+   margin: 60px auto;
+   justify-content: space-between;
+}
+
+.col-1-kontak .logo-kontak {
+   font-family: var(--jost-font);
+   font-size: 1.75rem;
+   font-weight: 700;
+   color: var(--main-color);
+}
+
+.col-1-kontak .subheading-kontak {
+   font-family: var(--jost-font);
+   font-size: 14px;
+   color: #5E5E5E;
+}
+
+.col-1-kontak .detail-kontak p {
+   font-family: var(--jost-font);
+   margin: 5px 0px;
+   font-size: 14px;
+   color: #5E5E5E;
+}
+
+.col-1-kontak .detail-kontak .telpon {
+   margin-top: 30px;
+}
+
+.col-1-kontak .detail-kontak .telpon span {
+   font-weight: 700;
+}
+
+.col-1-kontak .detail-kontak .email span {
+   font-weight: 700;
+}
+
+.col-2-kontak h3, .col-3-kontak h3, .col-4-kontak h3 {
+   font-family: var(--jost-font);
+   font-size: 1rem;
+   font-weight: 700;
+   color: var(--main-color);
+}
+
+.col-2-kontak ul, .col-3-kontak ul {
+   margin-top: 20px;
+}
+
+.col-2-kontak ul li, .col-3-kontak ul li {
+   margin-top: 12px;
+}
+
+.col-2-kontak li a, .col-3-kontak li a {
+   font-family: var(--main-font)
+   font-size: 14px;
+   color: #777777;
+}
+
+.col-4-kontak .social-networks {
+   max-width: 278px;
+   margin-top: 20px;
+   font-family: var(--main-font)
+   font-size: 14px;
+   color: #444444;
+}
+
+.col-4-kontak .lingkar-biru {
+   height: 36px;
+   width: 36px;
+   background-color: #47B2E4;
+   margin-top: 20px;
+   display: inline-block;
+   margin-left: 5px;
+   border-radius: 50%;
+}
+/* Kontak End */
+
+
+
+
+/* Footer Start */
+.footer {
+   background-color: var(--main-color);
+}
+
+.footer-wrapper {
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-wrapper .copy {
+   margin: 20px 0;
+   font-size: 14px;
+   font-weight: 400;
+   font-family: var(--main-font);
+   color: #ffff;
+}
+
+.footer-wrapper .copy span {
+   font-weight: 700;
+}
+
+.footer-wrapper .design-by {
+   margin: 20px 0;
+   font-size: 14px;
+   font-weight: 400;
+   font-family: var(--main-font);
+   color: #ffff;
+}
+
+.footer-wrapper .design-by span {
+   color: #47B2E4;
+}
+/* Footer End */
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+   .navbar .nav-wrapper {
+      padding: 0px 30px;
+   }
+
+   .nav-wrapper .menu-wrapper .menu {
+      gap: 50px;
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+   .nav-wrapper .menu-wrapper {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+
+      display: block;
+      text-align: center;
+      padding-bottom: 3rem;
+      border-radius: 10px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .5s ease-in-out;
+      background-color: #4a4a4a;
+   }
+
+   .nav-wrapper .menu-wrapper.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      transition: .5s ease-in-out;
+   }
+
+   .menu-toggle.bx-x {
+      transform: rotate(360deg);
+      transition: .5s;
+   }
+
+   .nav-wrapper .menu-wrapper .menu {
+      display: block;
+   }
+
+   .menu-wrapper .menu .menu-item {
+      margin: 30px 0;
+   }
+
+   .menu .menu-item .menu-link {
+      color: #ffff;
+   }
+
+   .nav-wrapper .menu-toggle {
+      display: initial;
+      font-size: 2.5rem;
+      color: var(--main-color);
+      transition: .5s;
+   }
+   
+   .kontak {
+      padding: 20px 20px;
+   }
+
+   .kontak .kontak-wrapper {
+      justify-content: start;
+      gap: 40px;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .kontak .kontak-wrapper {
+      justify-content: start;
+      gap: 20px;
+   }
+}
