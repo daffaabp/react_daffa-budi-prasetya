@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="../dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+   <nav class="p-4 bg-white shadow md:flex md:item0center md:justify-between">
+      <span class="text-2xl font-medium font-roboto">Simple header</span>
+
+      <ul class="md:flex md:items-center">
+         <li class="mx-2">
+            <a href="#" class="text-base bg-biru rounded text-white duration-500 px-4 py-3">Home</a>
+         </li>
+         <li class="mx-2">
+            <a href="#"
+               class="text-blue text-base hover:bg-biru hover:text-white rounded duration-500 px-4 py-3">Features</a>
+         </li>
+         <li class="mx-2">
+            <a href="#"
+               class="text-blue text-base hover:bg-biru hover:text-white rounded duration-500 px-4 py-3">Pricing</a>
+         </li>
+         <li class="mx-2">
+            <a href="#"
+               class="text-blue text-base hover:bg-biru hover:text-white rounded duration-500 px-4 py-3">FAQs</a>
+         </li>
+         <li class="mx-2">
+            <a href="#"
+               class="text-blue text-base hover:bg-biru hover:text-white rounded duration-500 px-4 py-3">About</a>
+         </li>
+      </ul>
+   </nav>
+
+   <div class="container mx-auto">
+      <div class="flex flex-col max-w-4xl mx-auto items-center">
+         <img class="w-16 h-16 mt-12 mb-6" src="../dist/img/tailwind-css-2.svg" alt="" />
+         <h1 class="text-3xl font-roboto font-medium mb-2">Create Product</h1>
+         <p class="text-center mb-4">
+            Below is an example form built entirely with Tailwind form controls.
+            Each required form group has a validation state that can be triggered
+            by attempting to submit the form without completing it.
+         </p>
+      </div>
+
+      <form class="max-w-2xl mx-auto">
+         <h1 class="font-roboto font-medium text-2xl">Detail Product</h1>
+         <div class="mb-8">
+            <label for="username" class="text-gray-600 block text-base font-normal mb-2">Product name</label>
+            <input
+               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+               type="text" name="username" id="username" required />
+         </div>
+
+         <div class="mb-8">
+            <label for="product_category" class="text-gray-600 block text-base font-normal mb-2">Product
+               Category</label>
+            <select id="product_category"
+               class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+               required>
+               <option value="">Select a category</option>
+               <option value="kopi">Kopi</option>
+               <option value="gula">Gula</option>
+               <option value="susu">Susu</option>
+            </select>
+         </div>
+
+         <div class="mb-8">
+            <label for="images_file" class="text-gray-600 block text-base font-normal mb-2">Image of Product</label>
+            <input
+               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+               type="file" name="images_file" id="images_file" required />
+         </div>
+
+         <div class="mb-8">
+            <label for="product_freshness" class="font-roboto font-medium text-base text-slate-600">Product
+               Freshness</label>
+            <div class="flex flex-col gap-2">
+               <div class="flex items-center me-4">
+                  <input id="kopi-radio" type="radio" value="kopi" name="product_freshness"
+                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+                  <label for="kopi-radio" class="ms-2 font-roboto font-normal text-base text-slate-600">Kopi</label>
+               </div>
+               <div class="flex items-center me-4">
+                  <input id="gula-radio" type="radio" value="gula" name="product_freshness"
+                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+                  <label for="gula-radio" class="ms-2 font-roboto font-normal text-base text-slate-600">Gula</label>
+               </div>
+               <div class="flex items-center me-4">
+                  <input id="susu-radio" type="radio" value="susu" name="product_freshness"
+                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+                  <label for="susu-radio" class="ms-2 font-roboto font-normal text-base text-slate-600">Susu</label>
+               </div>
+            </div>
+         </div>
+
+         <div class="mb-8">
+            <label for="description" class="text-gray-600 block text-base font-normal mb-2">Additional
+               Description</label>
+            <textarea id="description" class="py-3 px-4 block w-full border-2 bg-gray-100 rounded-lg text-sm ]"
+               rows="3"></textarea>
+         </div>
+
+         <div class="mb-8">
+            <label for="product_price" class="text-gray-600 block text-base font-normal mb-2">Product Price</label>
+            <div class="relative">
+               <input type="number" id="product_price" name="product_price"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm pl-10" />
+               <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-600">$</span>
+            </div>
+         </div>
+
+         <div class="flex justify-center mt-16 mb-8">
+            <button type="submit" class="bg-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+               Submit
+            </button>
+         </div>
+      </form>
+   </div>
+</body>
+
+</html>
