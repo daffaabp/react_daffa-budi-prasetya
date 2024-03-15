@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 
 
 function HeroSection() {
@@ -13,7 +13,7 @@ export default function App() {
       <div>Halaman Div</div>
       <h1>Tag H1</h1>
       <HeroSection />
-      <NavBar />
+      <Navbar />
     </div>
   )
   
