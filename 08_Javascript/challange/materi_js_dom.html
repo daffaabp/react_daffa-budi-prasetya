@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Create Product</title>
+   <style>
+      .error {
+         border: 1px solid red;
+      }
+
+      .success {
+         border: 1px solid green;
+      }
+
+      /* Tambahkan CSS untuk tabel */
+      table {
+         border-collapse: collapse;
+         /* Menggabungkan border */
+         width: 100%;
+         /* Menentukan lebar tabel */
+      }
+
+      th,
+      td {
+         border: 1px solid #ddd;
+         /* Menambahkan border pada setiap sel */
+         padding: 8px;
+         /* Menambahkan padding di dalam sel */
+      }
+
+      th {
+         background-color: #f2f2f2;
+         /* Memberikan warna latar belakang pada header */
+         text-align: left;
+         /* Menyetel teks agar rata kiri */
+      }
+   </style>
+</head>
+
+<body>
+   <form id="createProductForm">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName" />
+      <small id="productNameError" class="error"></small><br />
+
+      <label for="productPrice">Product Price:</label>
+      <input type="text" id="productPrice" name="productPrice" />
+      <small id="productPriceError" class="error"></small><br />
+
+      <input type="submit" value="Create Product" />
+   </form>
+
+   <div id="productTableContainer"></div>
+
+   <script>
+      const form = document.querySelector("#createProductForm");
+      const productNameEl = document.querySelector("#productName");
+      const productPriceEl = document.querySelector("#productPrice");
+      const productNameError = document.querySelector("#productNameError");
+      const productPriceError = document.querySelector("#productPriceError");
+      const productTableContainer = document.querySelector(
+         "#productTableContainer"
+      );
+
+      const showError = (input, message) => {
+         const formField = input.parentElement;
+         formField.classList.remove("success");
+         formField.classList.add("error");
+         const error = formField.querySelector("small");
+         error.textContent = message;
+      };
+
+      const showSuccess = (input) => {
+         const formField = input.parentElement;
+         formField.classList.remove("error");
+         formField.classList.add("success");
+         const error = formField.querySelector("small");
+         error.textContent = "";
+      };
+
+      const checkProductName = () => {
+         const value = productNameEl.value.trim();
+         if (value.length > 25) {
+            showError(
+               productNameEl,
+               "Product Name must not exceed 25 characters."
+            );
+            return false;
+         } else if (value.length === 0) {
+            showError(productNameEl, "Please enter a valid Product name.");
+            return false;
+         } else {
+            showSuccess(productNameEl);
+            return true;
+         }
+      };
+
+      const checkProductPrice = () => {
+         const value = productPriceEl.value.trim();
+         if (value.length === 0) {
+            showError(productPriceEl, "Product Price cannot be empty.");
+            return false;
+         } else {
+            showSuccess(productPriceEl);
+            return true;
+         }
+      };
+
+      const createProductTable = (productName, productPrice) => {
+         // Membuat elemen tabel
+         const table = document.createElement("table");
+         const thead = document.createElement("thead");
+         const tbody = document.createElement("tbody");
+         const headerRow = document.createElement("tr");
+         const nameHeader = document.createElement("th");
+         const priceHeader = document.createElement("th");
+         const productRow = document.createElement("tr");
+         const nameCell = document.createElement("td");
+         const priceCell = document.createElement("td");
+
+         // Menambahkan teks ke header
+         nameHeader.textContent = "Product Name";
+         priceHeader.textContent = "Product Price";
+
+         // Menambahkan header ke tabel
+         headerRow.appendChild(nameHeader);
+         headerRow.appendChild(priceHeader);
+         thead.appendChild(headerRow);
+         table.appendChild(thead);
+
+         // Menambahkan data produk ke tabel
+         nameCell.textContent = productName;
+         priceCell.textContent = productPrice;
+         productRow.appendChild(nameCell);
+         productRow.appendChild(priceCell);
+         tbody.appendChild(productRow);
+         table.appendChild(tbody);
+
+         // Menambahkan tabel ke kontainer
+         productTableContainer.appendChild(table);
+      };
+
+      form.addEventListener("submit", function (e) {
+         e.preventDefault();
+         // console.log("cek button");
+         // console.log(form.);
+         console.log(productNameEl.getElementsByClassName);
+         if (checkProductName() && checkProductPrice()) {
+            alert(
+               `Product Name: ${productNameEl.value}\nProduct Price: ${productPriceEl.value}`
+            );
+            // Membuat tabel setelah validasi berhasil
+            createProductTable(productNameEl.value, productPriceEl.value);
+         }
+      });
+   </script>
+</body>
+
+</html>
