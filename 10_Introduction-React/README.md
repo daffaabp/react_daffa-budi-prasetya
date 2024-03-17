@@ -15,6 +15,19 @@ React adalah libray JavaScript yang digunakan untuk membangun user interface yan
 - Untuk melihat tampilan websitenya, silahkan akses halaman "http://localhost:5173/" pada browser
 - Selamat aplikasi React kamu dengan Vite sudah berhasil di install
 
+## Apa itu Vite?
+- Vite adalah alat build yang menggunakan bundler Rollup
+- Vite menawarkan beberapa keunggulan dibandingkan alat build tradisional, seperti :
+    1. Startup yang lebih cepat
+    2. HMR yang lebih cepat
+    3. Ukuran build yang lebih kecil
+
+## Mengapa menggunakan Vite untuk React?
+- Vite menawarkan beberapa keuntungan untuk pengembang React, seperti:
+    1. Pengalaman pengembangan yang lebih cepat: Vite dapat membantu membuat aplikasi React dengan lebih cepat dan mudah.
+    2. Performa yang lebih baik: Vite dapat menghasilkan aplikasi React yang berkinerja tinggi.
+    3. Kemudahan penggunaan: Vite mudah dipelajari dan digunakan.
+
 ## Fitur Unggulan React JS :
 #### 1. Declarative views
 Ini membuat kode menjadi lebih mudah diprediksi dan di-debug. React membantu pembuatan desain UI yang interaktif di setiap state dalam aplikasi. Jika ada objek state yang berubah, React akan memperbarui dan merender ulang komponen.
