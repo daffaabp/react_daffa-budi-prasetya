@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 // import './index.css'
 import Hook from './components/Hook.jsx'
+import ClassComponent from './components/ClassComponent.jsx'
+import UseEffectComponent from './components/UseEffectComponent.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <Hook />
-    {/* <App /> */}
+  {/* <Hook /> */}
+  {/* <ClassComponent /> */}
+  <UseEffectComponent />
+  {/* <App /> */}
   </React.StrictMode>,
 )
