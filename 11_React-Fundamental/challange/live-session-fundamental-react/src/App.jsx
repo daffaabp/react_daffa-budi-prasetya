@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import "./assets/css/style.css";
 import styles from "./assets/css/styles.module.css";
-import Hook from "./components/Hooks";
+import Hook from "./components/Hook";
 
 function HeroSection() {
   return <div>HeroSection</div>;
