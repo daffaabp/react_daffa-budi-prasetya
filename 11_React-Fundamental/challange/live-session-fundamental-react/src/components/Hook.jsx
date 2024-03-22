@@ -83,7 +83,7 @@ export default function Hook() {
             setBahasa("button");
           }else {
             setBahasa("tombol");
-          } 
+          }   
           }}>
           {bahasa}
         </button>
