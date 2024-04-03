@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import PrivateComponent from "./auth/PrivateComponent";
 import PublicComponent from "./auth/PublicComponent";
 import "./App.css";
@@ -163,7 +163,7 @@ function AppRouting() {
       </div>
       <div>
         {/* aku */}
-        {/* <NavBar />
+        {/* <Navbar />
         <HeroSections /> */}
         {/* hilmi */}
         {/* <HeroSection /> */}
