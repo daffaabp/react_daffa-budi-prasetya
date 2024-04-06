@@ -27,7 +27,6 @@ function HeroSectionsHome() {
     //ketika ke halaman hero akan memalkukan pemanggilan id 1
   }, []);
   // const { id } = match.params;
-
   console.log(id);
   return <div>HeroSectionsHome</div>;
 }
