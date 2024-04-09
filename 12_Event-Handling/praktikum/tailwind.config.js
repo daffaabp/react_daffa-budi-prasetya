@@ -1,16 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-content: [
-"./src/**/*.{js,jsx}",
-"node_modules/flowbite-react/lib/esm/**/*.js",
-'node_modules/daisyui/dist/**/*.js',
-'node_modules/react-daisyui/dist/**/*.js',
-],
-theme: {
-extend: {},
-},
-plugins: [
-require("flowbite/plugin"),
-require('daisyui')
-],
-}
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    theme: {
+        extend: {
+            fontFamily: {
+                roboto: ["Roboto"],
+                jost: ["Jost"],
+                sans: ["Open Sans"],
+            },
+            colors: {
+                biru: "#0D6EFD",
+                "biru-button": "#47B2E4",
+                "biru-background": "#37517E",
+                tulisan: "#212529",
+                newsletter: "##F3F5FA",
+            },
+        },
+    },
+    plugins: [],
+};

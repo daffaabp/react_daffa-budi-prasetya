@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import { Button } from "flowbite-react";
 
-function App() {
+import CreateProduct from "./pages/CreateProduct";
+import './App.css';
 
-return (
-<div>
-    <Button>Click me</Button>
-</div>
-)
-}
+const App = () => {
+    return (
+        <div>
+            <CreateProduct />
+        </div>
+    );
+};
 
-export default App
+export default App;
