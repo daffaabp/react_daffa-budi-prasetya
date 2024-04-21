@@ -9,11 +9,21 @@ function App() {
     const [nameEdit, setNameEdit] = useState();
     const [ageEdit, setAgeEdit] = useState();
     const [addressEdit, setAddressEdit] = useState();
+    const [error, setError] = useState(null);
+
+    const ErrorMessage = ({message}) => {
+        return <div className="error">{message}</div>
+    }
 
     const fetchData = async () => {
-        const response = await axios.get("https://660faeb2356b87a55c520904.mockapi.io/users");
-        setData(response.data);
-        console.log("function di panggil", data);
+        try {
+            const response = await axios.get("https://660faeb2356b87a55c520904.mockapi.io/users");
+            setData(response.data);
+            console.log("Data berhasil diambil:", data);
+        } catch (error) {
+            console.error("Gagal mengambil data:", error);
+            setError(error.message);
+        }
     };
 
     useEffect(() => {
@@ -22,8 +32,17 @@ function App() {
 
     function handleClicks(id) {
         console.log(`ID kalian, ${id} data`);
-        const response = axios.delete(`https://660faeb2356b87a55c520904.mockapi.io/users/${id}`);
-        console.log(response);
+        axios.delete(`https://660faeb2356b87a55c520904.mockapi.io/users/${id}`)
+            .then(() => {
+                console.log("Data berhasil dihapus");
+                const newData = data.filter(user => user.id !== id);
+                setData(newData);
+                fetchData(); // Reload data setelah menghapus
+            })
+            .catch((error) => {
+                console.error("Gagal menghapus data:", error);
+                setError(error.message);
+            });
     }
 
     const handleSubmit = (e) => {
@@ -35,8 +54,17 @@ function App() {
             address: address
         };
 
-        const response = axios.post("https://660faeb2356b87a55c520904.mockapi.io/users", userData);
-        console.log(response);
+        axios.post("https://660faeb2356b87a55c520904.mockapi.io/users", userData)
+            .then(() => {
+                console.log("Data berhasil ditambahkan");
+                // lebih baik data ditambahkan lagi di dalam state lokal ketika data sudah tersimpan di API
+                setData([...data, userData]);
+                fetchData(); // Reload data setelah menambahkan
+            })
+            .catch((error) => {
+                console.error("Gagal menambahkan data:", error);
+                setError(error.message);
+            });
     };
 
     function handleSubmitEdit(e, id) {
@@ -47,7 +75,19 @@ function App() {
             age: ageEdit,
             address: addressEdit
         };
-        const response = axios.put(`https://660faeb2356b87a55c520904.mockapi.io/users/${id}`, userData);
+        axios.put(`https://660faeb2356b87a55c520904.mockapi.io/users/${id}`, userData)
+            .then(() => {
+                console.log("Data berhasil diubah");
+                fetchData(); // Reload data setelah mengubah
+            })
+            .catch((error) => {
+                console.error("Gagal mengubah data:", error);
+                setError(error.message);
+            });
+    }
+
+    if (error) {
+        return <ErrorMessage message={error} />;
     }
 
     return (
@@ -93,3 +133,4 @@ function App() {
 }
 
 export default App;
+
