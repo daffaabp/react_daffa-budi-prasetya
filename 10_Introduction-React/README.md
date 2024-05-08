@@ -1,4 +1,4 @@
-# Rangkuman Introduction React JS
+# Rangkuman Materi Introduction React JS
 React adalah libray JavaScript yang digunakan untuk membangun user interface yang interaktif berbasis component. React yang dibuat oleh Facebook dan bersifat open-source, sehingga dapat digunakan oleh siapa saja secara gratis.
 
 ## Cara Install React JS dengan Vite
