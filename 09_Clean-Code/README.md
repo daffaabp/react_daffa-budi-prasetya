@@ -1,4 +1,4 @@
-# Rangkuman Materi Clean Code
+# Rangkuman Materi Clean Code (Exploration Topic)
 
 Clean Code adalah istilah untuk kode yang mudah dibaca, dipahami, dan diubah oleh programmer. Sebuah susuan code akan bisa disebut sebagai clean code jika memiliki susunan struktur yang mudah dicerna, ringkas, berdasar, to the point, mengikuti pola dan best practices yang ada, dan menghindari complex nesting, big code blocks, dan unintuitive names.
 
@@ -31,10 +31,10 @@ Clean code dapat mempercepat proses pengembangan secara keseluruhan. Programmer 
 
 ## Clean Code "Principle" : KISS (Keep It So Simple)
 
-- Hindari membuat fungsi yang dibuat untuk melakukan A, sekaligus memodifikasi B, mengecek fungsi C, dst.
-- Tips Untuk selalu KISS : Fungsi atau class harus kecil, Fungsi dibuat untuk melakukan satu tugas saja, Jangan gunakan terlalu banyak argumen pada fungsi, Harus diperhatikan untuk mencapai kondisi yang seimbang, kecil, dan jumlahnya minimal.
-- DRY (Don't Repeat Yourslef) = Duplikasi code terjadi karena sering cope paste. Untuk menghindari duplikasi coba buatlah fungsi yang dapat digunakan secara berulang-ulang.
-- Refactoring = Refactoring adalah proses restrukturisasi kode yang dibuat, dengan cara mengubah struktur internal tanpa mengubah perilaku eksternal. Prinsip KISS dan DRY bisa dicapai dengan cara refactor.
-- Teknik Refactoring dapat dilakukan dengan cara diantara yaitu: Membuat sebuah abstraksi, Memecah kode dengan fungsi/class, Perbaiki penamaan dan lokasi kode, Deteksi kode yang memiliki duplikasi.
+-   Hindari membuat fungsi yang dibuat untuk melakukan A, sekaligus memodifikasi B, mengecek fungsi C, dst.
+-   Tips Untuk selalu KISS : Fungsi atau class harus kecil, Fungsi dibuat untuk melakukan satu tugas saja, Jangan gunakan terlalu banyak argumen pada fungsi, Harus diperhatikan untuk mencapai kondisi yang seimbang, kecil, dan jumlahnya minimal.
+-   DRY (Don't Repeat Yourslef) = Duplikasi code terjadi karena sering cope paste. Untuk menghindari duplikasi coba buatlah fungsi yang dapat digunakan secara berulang-ulang.
+-   Refactoring = Refactoring adalah proses restrukturisasi kode yang dibuat, dengan cara mengubah struktur internal tanpa mengubah perilaku eksternal. Prinsip KISS dan DRY bisa dicapai dengan cara refactor.
+-   Teknik Refactoring dapat dilakukan dengan cara diantara yaitu: Membuat sebuah abstraksi, Memecah kode dengan fungsi/class, Perbaiki penamaan dan lokasi kode, Deteksi kode yang memiliki duplikasi.
 
 ##
