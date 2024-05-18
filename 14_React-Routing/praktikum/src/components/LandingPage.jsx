@@ -1,4 +1,4 @@
-import heroImage from "../../assets/hero-img.png";
+import heroImage from "../assets/hero-img.png";
 
 const LandingPage = () => {
 return (
